@@ -20,9 +20,13 @@ is divided into following sections:
 
         -->
 <<<<<<< HEAD
+<project xmlns:if="ant:if" xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" xmlns:unless="ant:unless" basedir=".." default="default" name="ProjectKafi-impl">
+=======
+<<<<<<< HEAD
 <project xmlns:if="ant:if" xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" xmlns:unless="ant:unless" basedir=".." default="default" name="ProjectElis-impl">
 =======
 <project xmlns:if="ant:if" xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" xmlns:unless="ant:unless" basedir=".." default="default" name="ProjectVina-impl">
+>>>>>>> upstream/main
 >>>>>>> upstream/main
     <fail message="Please build using Ant 1.8.0 or higher.">
         <condition>
@@ -646,9 +650,13 @@ is divided into following sections:
                 </union>
                 <taskdef classname="org.testng.TestNGAntTask" classpath="${run.test.classpath}" name="testng"/>
 <<<<<<< HEAD
+                <testng classfilesetref="test.set" failureProperty="tests.failed" jvm="${platform.java}" listeners="org.testng.reporters.VerboseReporter" methods="${testng.methods.arg}" mode="${testng.mode}" outputdir="${build.test.results.dir}" suitename="ProjectKafi" testname="TestNG tests" workingDir="${work.dir}">
+=======
+<<<<<<< HEAD
                 <testng classfilesetref="test.set" failureProperty="tests.failed" jvm="${platform.java}" listeners="org.testng.reporters.VerboseReporter" methods="${testng.methods.arg}" mode="${testng.mode}" outputdir="${build.test.results.dir}" suitename="ProjectElis" testname="TestNG tests" workingDir="${work.dir}">
 =======
                 <testng classfilesetref="test.set" failureProperty="tests.failed" jvm="${platform.java}" listeners="org.testng.reporters.VerboseReporter" methods="${testng.methods.arg}" mode="${testng.mode}" outputdir="${build.test.results.dir}" suitename="ProjectVina" testname="TestNG tests" workingDir="${work.dir}">
+>>>>>>> upstream/main
 >>>>>>> upstream/main
                     <xmlfileset dir="${build.test.classes.dir}" includes="@{testincludes}"/>
                     <propertyset>
@@ -747,9 +755,13 @@ is divided into following sections:
                     <isset property="test.method"/>
                 </condition>
 <<<<<<< HEAD
+                <condition else="-suitename ProjectKafi -testname @{testClass} ${test.class.or.method}" property="testng.cmd.args" value="@{testClass}">
+=======
+<<<<<<< HEAD
                 <condition else="-suitename ProjectElis -testname @{testClass} ${test.class.or.method}" property="testng.cmd.args" value="@{testClass}">
 =======
                 <condition else="-suitename ProjectVina -testname @{testClass} ${test.class.or.method}" property="testng.cmd.args" value="@{testClass}">
+>>>>>>> upstream/main
 >>>>>>> upstream/main
                     <matches pattern=".*\.xml" string="@{testClass}"/>
                 </condition>
@@ -1095,9 +1107,13 @@ is divided into following sections:
     </target>
     <target if="already.built.jar.${basedir}" name="-warn-already-built-jar">
 <<<<<<< HEAD
+        <echo level="warn" message="Cycle detected: ProjectKafi was already built"/>
+=======
+<<<<<<< HEAD
         <echo level="warn" message="Cycle detected: ProjectElis was already built"/>
 =======
         <echo level="warn" message="Cycle detected: ProjectVina was already built"/>
+>>>>>>> upstream/main
 >>>>>>> upstream/main
     </target>
     <target depends="init,-deps-jar-init" name="deps-jar" unless="no.deps">
@@ -1773,9 +1789,13 @@ is divided into following sections:
     </target>
     <target if="already.built.clean.${basedir}" name="-warn-already-built-clean">
 <<<<<<< HEAD
+        <echo level="warn" message="Cycle detected: ProjectKafi was already built"/>
+=======
+<<<<<<< HEAD
         <echo level="warn" message="Cycle detected: ProjectElis was already built"/>
 =======
         <echo level="warn" message="Cycle detected: ProjectVina was already built"/>
+>>>>>>> upstream/main
 >>>>>>> upstream/main
     </target>
     <target depends="init,-deps-clean-init" name="deps-clean" unless="no.deps">

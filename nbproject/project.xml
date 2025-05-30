@@ -4,9 +4,13 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
 <<<<<<< HEAD
+            <name>ProjectKafi</name>
+=======
+<<<<<<< HEAD
             <name>ProjectElis</name>
 =======
             <name>ProjectVina</name>
+>>>>>>> upstream/main
 >>>>>>> upstream/main
             <explicit-platform explicit-source-supported="true"/>
             <source-roots>
