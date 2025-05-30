@@ -6,7 +6,6 @@ package playzone;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author USER
