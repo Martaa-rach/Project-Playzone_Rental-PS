@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,6 +10,7 @@ package playzone;
  *
  * @author User
  */
+
 public class SessionLogin {
     private static String ID_pegawai;
     private static String nama_pegawai;
@@ -37,4 +39,3 @@ public class SessionLogin {
         nama_pegawai = null;
     }
 }
-
