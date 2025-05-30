@@ -441,8 +441,8 @@ public class TrSewaPegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 402, 110, 40));
-        getContentPane().add(jCalendarTanggalSewa, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 460, 320, 40));
-        getContentPane().add(jCalendarTanggalKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 520, 310, 40));
+        getContentPane().add(jCalendarTanggalSewa, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 470, 310, -1));
+        getContentPane().add(jCalendarTanggalKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 530, 290, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/bg no sewa pegawai.png"))); // NOI18N
         jLabel1.setText("0f0f9f");
