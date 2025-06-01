@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link media="all" rel="stylesheet" href="./src/css/all.css" />
+    <link media="all" rel="stylesheet" href="./src/css/fontawesome.css" />
+
+    <link media="all" rel="stylesheet" href="./src/css/menu.css" />
+    <link media="all" rel="stylesheet" href="./src/css/product.css" />
+
+   <!-- <style>
+      body {
+        color: white;
+      }
+    </style> -->
+
+  </head>
+
+  <body style="background-color: rgb(8, 26, 41);">
+    <header>
+      <div class="header-wrap">
+        <div class="mobile-nav">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/Logo.png" alt="PlayZone" />
+          </a>
+        </div>
+        <nav>
+          <div class="nav-wrap">
+            <a href="./menu.html">Menu</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+          </div>
+        </nav>
+        <div class="cart-button">
+          <svg
+            width="73"
+            height="74"
+            viewBox="0 0 73 74"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.1665 12.6667H20.0249C20.6332 12.6667 20.9374 12.6667 21.1574 12.8385C21.3774 13.0103 21.4512 13.3053 21.5987 13.8955L23.7188 22.3758C24.0138 23.5561 24.1614 24.1462 24.6014 24.4898C25.0415 24.8334 25.6498 24.8334 26.8664 24.8334H30.4165"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <path
+              d="M54.75 52.2083H20.5007C19.4737 52.2083 18.9601 52.2083 18.7173 51.8715C18.4746 51.5346 18.637 51.0474 18.9617 50.0731L20.5522 45.3018C20.9091 44.2311 21.0875 43.6957 21.5124 43.3895C21.9372 43.0833 22.5015 43.0833 23.6301 43.0833H42.5833"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M50.7056 43.0833H25.7074C24.9144 43.0833 24.2376 42.51 24.1072 41.7278L21.5276 26.25C21.404 25.5084 21.9759 24.8333 22.7277 24.8333H59.5208C60.1237 24.8333 60.5159 25.4679 60.2462 26.0072L52.1565 42.1866C51.8818 42.7362 51.32 43.0833 50.7056 43.0833Z"
+              stroke="#222"
+              stroke-width="3.24444"
+              stroke-linecap="round"
+            />
+            <circle cx="51.7082" cy="61.3334" r="3.04167" fill="#222" />
+            <circle cx="27.3752" cy="61.3334" r="3.04167" fill="#222" />
+          </svg>
+          <span id="cart-count" class="cart-count"></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <h2 class="title">All You Need</h2>
+
+        <div class="menu-wrap">
+          <div class="tab"></div>
+
+          <div class="overlay" onclick="closePopup()"></div>
+          <div class="popup" data-category="Play" data-subcategory="Bawa Pulang"></div>
+          <div class="menu-list">
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/2K25.png" />
+                </div>
+                <h3>2K25 (NBA 2K25)</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/callOfDuty.png" />
+                </div>
+                <h3>Call of Duty 4: Modern Warfare Remastered</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/crysisRemastered.png" />
+                </div>
+                <h3>Crysis Remastered Trilogy</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/dragonBall.png" />
+                </div>
+                <h3>Dragon Ball Sparking! ZERO Ultimate Edition</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/fc24.png" />
+                </div>
+                <h3>EA Sports FC 24</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/pes2021.png" />
+                </div>
+                <h3>eFootball PES 2021 Season Update</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/ghostOfTsushima.png" />
+                </div>
+                <h3>Ghost of Tsushima</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/ghostwire.png" />
+                </div>
+                <h3>Ghostwire: Tokyo</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+            
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/GodOfWar.png" />
+                </div>
+                <h3>God of War Ragnarök</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/GTA.png" />
+                </div>
+                <h3>Grand Theft Auto V</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/mortal11kombat.png" />
+                </div>
+                <h3>Mortal Kombat 11</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/NarutoToBoruto.png" />
+                </div>
+                <h3>Naruto to Boruto: Shinobi Striker</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/NFS.png" />
+                </div>
+                <h3>Need for Speed Heat</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/silentHill2.png" />
+                </div>
+                <h3>Silent Hill 2</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/spiderMan.png" />
+                </div>
+                <h3>Spider-Man</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/stray.png" />
+                </div>
+                <h3>Stray </h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/theLastOfUs.png" />
+                </div>
+                <h3>The Last of Us (2013)</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/unravelTwo.png" />
+                </div>
+                <h3>Unravel Two</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/wolverine.png" />
+                </div>
+                <h3>Wolverine (Insomniac Games)</h3>
+                <p class="category">Games</p>
+              </div>
+            </div>
+
+            <div class="product" data-category="Play" data-subcategory="VIP">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/VIP.png" />
+                </div>
+                <h3>VIP Room</h3>
+                <p class="category">Play</p>
+                <div class="price">Rp 18.000</div>
+              </div>
+            </div>
+
+            <div class="product" data-category="Play" data-subcategory="Reguler">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/reguler.png" />
+                </div>
+                <h3>Reguler Room</h3>
+                <p class="category">Play</p>
+                <div class="product-choice">
+                  <div class="sugar"></div> <!--NO Tempat Duduk-->
+                </div>
+                <div class="price">Rp 10.000</div>
+              </div>
+            </div>
+
+            <div class="product" data-category="Play" data-subcategory="Bawa Pulang">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/bawaPulang.png" />
+                </div>
+                <h3>Rental Bawa Pulang</h3>
+                <p class="category">Play</p>
+                <div class="product-choice">
+                  <div class="type"></div>  <!--PS-->
+                </div>
+                <div class="price">Rp 48.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/aqua.png" />
+                </div>
+                <h3>Aqua</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 3.000</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/beng.png" />
+                </div>
+                <h3>Beng-Beng</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 2.500</div>
+              </div>
+            </div>
+
+            <div class="product">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/Chicken-nuggets.png" />
+                </div>
+                <h3>Biskuat</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 1.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/chitato.png" />
+                </div>
+                <h3>Chitato</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 5.500</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/cocacola.png" />
+                </div>
+                <h3>CocaCola</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/fanta.png" />
+                </div>
+                <h3>Fanta</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/floridina.png" />
+                </div>
+                <h3>Floridina</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 3.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/french.png" />
+                </div>
+                <h3>French fries</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 5.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/freshtea.png" />
+                </div>
+                <h3>freshtea</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 3.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/goodday.png" />
+                </div>
+                <h3>Good Day</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 5.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/gopotato.png" />
+                </div>
+                <h3>Gopotato</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 2.500</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/lite.png" />
+                </div>
+                <h3>Chitato Lite</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 6.500</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/momogi.png" />
+                </div>
+                <h3>Momogi</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 2.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/nabati.png" />
+                </div>
+                <h3>Nabati</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 2.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/oreo.png" />
+                </div>
+                <h3>Oreo</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 8.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/piattos.png" />
+                </div>
+                <h3>Piattos</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 6.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/popmie.png" />
+                </div>
+                <h3>Pop Mie</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 7.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/pucuk.png" />
+                </div>
+                <h3>Teh Pucuk</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 3.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/ultramilk.png" />
+                </div>
+                <h3>Susu Ultramilk</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 6.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/taro.png" />
+                </div>
+                <h3>Taro Net</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 5.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/tango.png" />
+                </div>
+                <h3>Tango</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 4.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/tictac.png" />
+                </div>
+                <h3>Tic-Tac</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 5.000</div>
+              </div>
+            </div>
+
+            <div class="product best">
+              <div class="product-wrap">
+                <div class="img">
+                  <img src="./assets/product-img/sus.png" />
+                </div>
+                <h3>Walens Choco Soes</h3>
+                <p class="category">Snack</p>
+                <div class="price">Rp 8.000</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+<!-- Modal HTML structure -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Cart Items</h2>
+      <span class="close">&times;</span>
+    </div>
+    <div id="cartItemsContainer"></div>
+    <div id="modal-footer">
+      <div class="checkout">
+        <p id="total-price"></p>
+        <span href="">Check Out</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer>
+      <div class="footer-wrap">
+        <div class="left">
+          <h3>Contacts</h3>
+          <div class="location">
+            <p>
+              <i class="fas fa-map-marker-alt"></i
+              ><span>Jl. Moch. Sruji No.193, RT.003/RW.02, Cangkring, Patrang, Kec. Patrang, Kabupaten Jember, Jawa Timur 68111</span>
+            </p>
+            <p><i class="fab fa-instagram"></i><span>@jemberplayzone</span></p>
+            <p>
+              <i class="fas fa-phone-square-alt"></i
+              ><span>+62 8123 4621 62 </span>
+            </p>
+          </div>
+        </div>
+        <div class="middle">
+          <h2>PlayZone</h2>
+          <p class="desc">Your Adventure, Your PlayStation</p>
+          <div class="social">
+            <a href="https://www.facebook.com/playzonejaya" target="_blank" rel="nofollow external"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/playzonepatrang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="nofollow external"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Working Hours</h3>
+          <div class="work-hours">
+            <p><span>Mon - Sun</span><span>7.00 AM - 4.00 PM</span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/all.js"></script>
+  </body>
+</html>
